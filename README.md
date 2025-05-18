@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Banca Inteligente - Análisis de Estados Bancarios con IA local
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Banca Inteligente es una aplicación web React que permite a los usuarios subir PDFs de resúmenes bancarios para analizarlos de forma local y privada mediante inteligencia artificial. La aplicación utiliza OpenRouter y el modelo Llama 4 Scout para procesar y extraer información valiosa de los estados bancarios sin enviar datos personales a servidores externos.
 
-## Available Scripts
+## Características Principales
 
-In the project directory, you can run:
+- **Subida y Procesamiento Local de PDFs**: Sube tus estados bancarios y procésalos directamente en tu navegador
+- **Análisis IA**: Utiliza OpenRouter con Llama 4 Scout para analizar el contenido de tus estados bancarios
+- **Privacidad de Datos**: Redacción automática de información sensible antes de procesar con IA
+- **Categorización de Gastos**: Visualiza tus gastos organizados por categorías
+- **Gráficos Interactivos**: Gráficos de barras, pastel y líneas para visualizar tus finanzas
+- **Asistente Virtual**: Chatbot especializado en finanzas personales que puede responder preguntas sobre tus datos
+- **Recomendaciones Financieras**: Recibe consejos personalizados basados en tus patrones de gasto
+- **Almacenamiento Local**: Todos los datos se guardan únicamente en tu navegador
 
-### `npm start`
+## Tecnologías Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Framework frontend
+- **Material UI**: Componentes UI modernos
+- **PDF.js**: Procesamiento de PDFs en el navegador
+- **Chart.js**: Visualización de datos
+- **OpenRouter API**: Acceso al modelo Llama 4 Scout para análisis de IA
+- **LocalStorage**: Almacenamiento de datos en el navegador
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Comenzando
 
-### `npm test`
+### Requisitos Previos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14 o superior)
+- npm o yarn
 
-### `npm run build`
+### Instalación
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clona este repositorio o descárgalo
+2. Instala las dependencias:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Inicia la aplicación en modo desarrollo:
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Abre [http://localhost:3000](http://localhost:3000) para verla en tu navegador
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Configuración para Producción
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Para construir la aplicación para producción:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm run build
+```
 
-## Learn More
+## Privacidad y Seguridad
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Esta aplicación está diseñada con la privacidad como prioridad:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- El procesamiento de PDFs ocurre completamente en el navegador
+- La información sensible (números de cuenta, tarjetas, nombres completos) es sanitizada antes de enviar el texto a la API de IA
+- No se almacenan datos en servidores externos
+- Todos los análisis y datos se guardan localmente en el navegador del usuario
 
-### Code Splitting
+## Notas Importantes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Para usar la aplicación, necesitarás tu propia clave API de OpenRouter
+- La aplicación está diseñada para uso personal y local
 
-### Analyzing the Bundle Size
+## Licencia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT
