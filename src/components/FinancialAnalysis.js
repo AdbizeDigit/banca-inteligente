@@ -58,20 +58,6 @@ const FinancialAnalysis = () => {
     });
   };
   
-  // Si no hay datos, mostrar mensaje
-  if (analyses.length === 0) {
-    return (
-      <Paper elevation={3} sx={{ p: 3, mb: 3 }}>
-        <Typography variant="h5" gutterBottom>
-          Análisis Financiero
-        </Typography>
-        <Typography variant="body1" color="textSecondary" align="center" sx={{ my: 4 }}>
-          Sube y procesa tus estados bancarios para ver el análisis aquí.
-        </Typography>
-      </Paper>
-    );
-  }
-  
   // Obtener el análisis del archivo seleccionado o el más reciente
   const currentAnalysis = useMemo(() => {
     let analysis = null;
@@ -107,6 +93,20 @@ const FinancialAnalysis = () => {
                       extractSection(currentAnalysis.analysis, '4\\. Recomendaciones')
     };
   }, [currentAnalysis]);
+  
+  // Si no hay datos, mostrar mensaje
+  if (analyses.length === 0) {
+    return (
+      <Paper elevation={3} sx={{ p: 3, mb: 3 }}>
+        <Typography variant="h5" gutterBottom>
+          Análisis Financiero
+        </Typography>
+        <Typography variant="body1" color="textSecondary" align="center" sx={{ my: 4 }}>
+          Sube y procesa tus estados bancarios para ver el análisis aquí.
+        </Typography>
+      </Paper>
+    );
+  }
   
 
   
