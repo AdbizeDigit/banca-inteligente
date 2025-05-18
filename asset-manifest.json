@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/banca-inteligente/static/css/main.f855e6bc.css",
+    "main.js": "/banca-inteligente/static/js/main.4a11b421.js",
+    "static/js/369.a9fe995a.chunk.js": "/banca-inteligente/static/js/369.a9fe995a.chunk.js",
+    "static/js/903.68a0c108.chunk.js": "/banca-inteligente/static/js/903.68a0c108.chunk.js",
+    "static/js/453.631c6abe.chunk.js": "/banca-inteligente/static/js/453.631c6abe.chunk.js",
+    "static/js/133.53974369.chunk.js": "/banca-inteligente/static/js/133.53974369.chunk.js",
+    "static/js/749.b998bc0b.chunk.js": "/banca-inteligente/static/js/749.b998bc0b.chunk.js",
+    "index.html": "/banca-inteligente/index.html",
+    "main.f855e6bc.css.map": "/banca-inteligente/static/css/main.f855e6bc.css.map",
+    "main.4a11b421.js.map": "/banca-inteligente/static/js/main.4a11b421.js.map",
+    "369.a9fe995a.chunk.js.map": "/banca-inteligente/static/js/369.a9fe995a.chunk.js.map",
+    "453.631c6abe.chunk.js.map": "/banca-inteligente/static/js/453.631c6abe.chunk.js.map",
+    "133.53974369.chunk.js.map": "/banca-inteligente/static/js/133.53974369.chunk.js.map",
+    "749.b998bc0b.chunk.js.map": "/banca-inteligente/static/js/749.b998bc0b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.4a11b421.js"
+  ]
+}
